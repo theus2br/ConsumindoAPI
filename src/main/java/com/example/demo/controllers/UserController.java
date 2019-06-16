@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.domain.User;
+import com.example.demo.entidades.User;
 
 @RestController
 @RequestMapping(value="/users")
