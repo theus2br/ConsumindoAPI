@@ -2,9 +2,14 @@ package com.example.demo.entidades;
 
 import java.io.Serializable;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "user")
 public class User implements Serializable {
 	private static final long serialVersionUID = -19952167579845068L;
 
+	@Id
 	private String id;
 	private String name;
 	private String email;
@@ -79,6 +84,11 @@ public class User implements Serializable {
 		} else if (!name.equals(other.name))
 			return false;
 		return true;
+	}
+
+	public Object size() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }
